@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="/localhost" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="<?= $description ?>" />
+    <meta name="keywords" content="<?= $key_words ?>" />
+    <title><?= $title ?></title>
+</head>
+
+<body>
+    <header>
+        <h1>ITnetworkMVC - ukázkový web</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="clanek/uvod">Úvod</a></li>
+            <li><a href="clanek">Články</a></li>
+            <li><a href="contact">Kontakt</a></li>
+        </ul>
+    </nav>
+    <br clear="both" />
+
+    <article>
+        <?php $this->controller->PrintView() ?>
+    </article>
+
+    <footer>
+        <p>Ukázkový tutoriál pro jednoduché MVC z programátorské sociální sítě
+            <a href="http://www.itnetwork.cz" target="_blank">itnetwork.cz</a>.
+        </p>
+    </footer>
+</body>
+
+</html>
